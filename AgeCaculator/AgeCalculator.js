@@ -2,7 +2,7 @@ function calcularEdad(){
 
 let nacimiento = new Date(document.getElementById("fecha").value);
 
-let hoy = new Date();
+let hoy = new Date(); // Fecha actual
 
 let años = hoy.getFullYear() - nacimiento.getFullYear();
 

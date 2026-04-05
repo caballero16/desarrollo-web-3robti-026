@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculator</title>
     <style>
       body{
         display: flex;
@@ -29,8 +29,8 @@
         padding: 1px;
         border: none;
         border-radius: 10px;
-        background: black;
-        color: yellowgreen;
+        background: white;
+        color: black;
       }
 
       .buttons{
@@ -53,15 +53,15 @@
       }
 
       .operator{
-        background: orange;
+        background: green;
         color: white;
       }
       .equal{
-        background: blue;
+        background: orange;
         color: white;
       }
       .clear{
-        background: red;
+        background: blueviolet;
         color: white;
       }
     </style>
@@ -70,7 +70,7 @@
     <div class="calculator">
         <input type="text"  id="display" class="display" disabled>
 
-        <div class="buttons">
+        <div class="buttons">  
             <button onclick="clearDisplay()" class="clear">C</button>
             <button onclick="append(',')" class="operator">,</button>
             <button onclick="append('*')" class="operator">*</button>
@@ -92,8 +92,8 @@
 
             <button onclick="calculate()" class="equal">=</button>
             <button onclick="append('0')">0</button>
-        </div>
-    </div>
+        </div>  
+    </div>   // Calculator container
 
     <script>
         function append(value) {
@@ -111,7 +111,7 @@
             } catch {
                 alert("Sintax Error");
             }
-        }
+        }     // Function to append values to the display
     </script>
 </body>
 </html>
